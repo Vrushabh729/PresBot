@@ -1,0 +1,205 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    margin: 10px 0 0;
+    font-size: 1.2rem;
+}
+
+/* Upload Section */
+#upload-section {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.upload-box {
+    border: 2px dashed #4CAF50;
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.upload-box:hover {
+    background: #f0f0f0;
+}
+
+.upload-box i {
+    font-size: 3rem;
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+.upload-box p {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+#file-input {
+    display: none;
+}
+
+.controls {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+.controls label {
+    font-weight: bold;
+}
+
+.controls select {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+.btn i {
+    margin-right: 8px;
+}
+
+/* Progress Bar */
+#progress-bar-container {
+    width: 100%;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+#progress-bar {
+    width: 0%;
+    height: 20px;
+    background-color: #4CAF50;
+    transition: width 0.3s ease;
+}
+
+/* Output Section */
+#output-section {
+    margin-top: 20px;
+}
+
+#output-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.file-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.file-grid img, .file-grid video {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.file-grid p {
+    margin: 10px 0;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.file-grid a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.file-grid a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    .upload-box {
+        padding: 20px;
+    }
+
+    .upload-box i {
+        font-size: 2rem;
+    }
+
+    .controls {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}
